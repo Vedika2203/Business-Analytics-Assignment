@@ -1,0 +1,3 @@
+--query to find the harrament cases in City of London 
+SELECT * FROM `bigquery-public-data.london_crime.crime_by_lsoa` 
+where minor_category = 'Harassment' and borough = 'City of London'
