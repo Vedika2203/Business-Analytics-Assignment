@@ -1,0 +1,4 @@
+--Query to find medicine provider first and last name using left join of city from two different tables
+SELECT nppes_provider_first_name, nppes_provider_last_org_name FROM `bigquery-public-data.medicare.physicians_and_other_supplier_2012` Mc 
+left join `bigquery-public-data.medicare.outpatient_charges_2012` Op
+on Mc.nppes_provider_city = Op.provider_city
