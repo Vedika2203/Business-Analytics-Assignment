@@ -1,0 +1,3 @@
+-- Query for Bitcoins with size more than 20000 and less than 40000
+SELECT * FROM `bigquery-public-data.crypto_bitcoin.blocks` 
+where size >20000 and size <40000
