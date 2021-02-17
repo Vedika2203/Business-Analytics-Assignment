@@ -1,0 +1,4 @@
+--Query used to join population and health of countries using World bank data for past several years
+SELECT * FROM `bigquery-public-data.world_bank_global_population.population_by_country` WB_pop 
+left join `bigquery-public-data.world_bank_health_population.health_nutrition_population` WB_health 
+on WB_pop.country_code = WB_health.country_code
