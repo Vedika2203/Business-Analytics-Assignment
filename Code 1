@@ -1,0 +1,3 @@
+-- SQL query to find max population of an area in census data 
+SELECT max(population) as max_population FROM `bigquery-public-data.census_bureau_usa.population_by_zip_2000`
+group by zipcode
