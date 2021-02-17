@@ -1,0 +1,4 @@
+-- Query for finding total discahrge of patients from 2 separate tables from 2011 medical records
+SELECT total_discharges FROM `bigquery-public-data.medicare.inpatient_charges_2011` IP 
+left join  `bigquery-public-data.medicare.outpatient_charges_2011` OP
+on IP.provider_id = OP.provider_id
