@@ -1,0 +1,4 @@
+-- Query to find average estimated charges to patients from two different table (using inner join)
+SELECT average_estimated_submitted_charges FROM `bigquery-public-data.medicare.outpatient_charges_2011` as OP
+inner join  `bigquery-public-data.medicare.inpatient_charges_2011` IP
+on OP.provider_id = IP.provider_id
