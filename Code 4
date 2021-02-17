@@ -1,0 +1,3 @@
+-- total number of registered crime between 2010 and 2016
+SELECT count(*) as total_crime FROM `bigquery-public-data.london_crime.crime_by_lsoa`
+where year between 2010 and 2016
